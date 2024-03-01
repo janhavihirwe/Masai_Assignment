@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+        margin-bottom: 15px;
+    }
+</style>
+<body>
+    <div id="div1">
+        <input type="number" placeholder="enter 1st number" id="1st">
+        <input type="number" placeholder="enter 2nd number" id="2nd">
+    </div>
+    <div>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+    </div>
+</body>
+<script>
+    function add(){
+        var n1= Number(document.getElementById("1st").value);
+        var n2=Number(document.getElementById("2nd").value);
+        var result=n1+n2;
+        alert(result);
+    }
+    function subtract(){
+        var n1= Number(document.getElementById("1st").value);
+        var n2=Number(document.getElementById("2nd").value);
+        var result=n1-n2;
+        alert(result);
+    }
+    function multiply(){
+        var n1= Number(document.getElementById("1st").value);
+        var n2=Number(document.getElementById("2nd").value);
+        var result=n1*n2;
+        alert(result);
+    }
+    function divide(){
+        var n1= Number(document.getElementById("1st").value);
+        var n2=Number(document.getElementById("2nd").value);
+        var result=n1/n2;
+        alert(result);
+    }
+</script>
+</html>
